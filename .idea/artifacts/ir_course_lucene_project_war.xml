@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ir_course_lucene_project:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="JavaServerFaces.war">
+      <element id="artifact" artifact-name="ir_course_lucene_project:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lucene-analyzers-common-6.3.0" />
+          <element id="library" level="project" name="PrimeFaces-5.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
