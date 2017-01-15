@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:include src="menu.xhtml"/>
+<h:head>
+    <title>İndeks İşlemleri</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:outputPanel id="outputPanelId" style="margin-top: 20px;">
+            <p:panelGrid style="width: 60%">
+                <p:row>
+                    <p:column style="width: 30%">
+                        <h:outputLabel style="width: 100%" value="Makalelerin Dizini"/>
+                    </p:column>
+                    <p:column style="width: 70%">
+                        <p:inputText style="width: 100%" value="#{indexController.makaleDizini}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="width: 30%">
+                        <h:outputLabel style="width: 100%" value="İndeks Dizini"/>
+                    </p:column>
+                    <p:column style="width: 70%">
+                        <p:inputText style="width: 100%" value="#{indexController.indeksDizini}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column colspan="2" style="text-align: center">
+                        Makale alanlarının ağırlıkları
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="width: 30%">
+                        <h:outputLabel style="width: 100%" value="Başlık"/>
+                    </p:column>
+                    <p:column style="width: 70%">
+                        <p:inputText value="#{indexController.baslik}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="width: 30%">
+                        <h:outputLabel style="width: 100%" value="Anahtar Kelimeler"/>
+                    </p:column>
+                    <p:column style="width: 70%">
+                        <p:inputText value="#{indexController.anahtarlar}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="width: 30%">
+                        <h:outputLabel style="width: 100%" value="Özet"/>
+                    </p:column>
+                    <p:column style="width: 70%">
+                        <p:inputText value="#{indexController.ozet}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="width: 30%">
+                        <h:outputLabel style="width: 100%" value="Analyser Seçimi"/>
+                    </p:column>
+                    <p:column style="width: 70%;">
+                        <p:selectOneMenu id="analyserMenuId" value="#{indexController.analyser}" style="width: 200px">
+                            <f:selectItem itemLabel="Türkçe" itemValue="Turkce" />
+                            <f:selectItem itemLabel="Standart" itemValue="Standart" />
+                        </p:selectOneMenu>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column colspan="2" style="text-align: center">
+                        <p:commandButton style="width: 300px; margin: 20px;" value="İndeksleme İşlemini Başlat"
+                                         actionListener="#{indexController.indeksle}"
+                                         process="outputPanelId"
+                                         update="outputPanelId"/>
+                    </p:column>
+                </p:row>
+            </p:panelGrid>
+            <p:growl/>
+        </p:outputPanel>
+        <p:outputLabel>
+
+        </p:outputLabel>
+    </h:form>
+</h:body>
+</html>

@@ -75,6 +75,24 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>jrebel-maven-plugin</artifactId>
+				<configuration>
+					<alwaysGenerate>true</alwaysGenerate>
+					<addResourcesDirToRebelXml>true</addResourcesDirToRebelXml>
+					<showGenerated>true</showGenerated>
+				</configuration>
+				<executions>
+					<execution>
+						<id>generate-rebel-xml</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>

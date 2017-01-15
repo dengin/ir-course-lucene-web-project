@@ -23,11 +23,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="ir_course_lucene_project" />
         <module name="JavaServerFaces" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ir_course_project" target="1.7" />
+      <module name="ir_course_lucene_project" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
