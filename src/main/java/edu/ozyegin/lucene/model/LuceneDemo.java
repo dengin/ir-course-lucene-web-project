@@ -16,7 +16,9 @@ import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.WildcardQuery;
 import org.apache.lucene.store.FSDirectory;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -79,8 +81,9 @@ public class LuceneDemo {
 
     }
 
-    private void createLuceneIndex(){
-        MyIndexer indexer = new MyIndexer(indexDirectory, dataDirectory);
+    private void createLuceneIndex() throws Exception
+    {
+        MyIndexer indexer = new MyIndexer(indexDirectory, dataDirectory, 1, 1, 1, null);
         //Create IndexWriter
         indexer.createIndexWriter();
         try {
@@ -90,6 +93,14 @@ public class LuceneDemo {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+        catch (ParserConfigurationException e)
+        {
+            e.printStackTrace();
+        }
+        catch (SAXException e)
+        {
+            e.printStackTrace();
         }
     }
 

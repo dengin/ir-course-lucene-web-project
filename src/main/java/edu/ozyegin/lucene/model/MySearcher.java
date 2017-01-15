@@ -1,8 +1,11 @@
 package edu.ozyegin.lucene.model;
 
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tr.TurkishAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
@@ -19,20 +22,89 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * User: TTEDEMIRCIOGLU
  * Date: 20.12.2016
  * Time: 21:44
  */
-public class MySearcher
+public class MySearcher implements Serializable
 {
-    private MySearcher()
+    private String indeks;
+    private String field;
+    private String query;
+    private String analyser;
+
+    public MySearcher(String indeks, String field, String query, String analyser)
     {
+        this.indeks = indeks;
+        this.field = field;
+        this.query = query;
+        this.analyser = analyser;
+    }
+
+    public List<Makale> search() throws IOException, ParseException
+    {
+        DirectoryReader var18 = DirectoryReader.open(FSDirectory.open(Paths.get(this.indeks, new String[0])));
+        IndexSearcher searcher = new IndexSearcher(var18);
+        Analyzer analyzer;
+        if (this.analyser != null && this.analyser.equals("Turkce"))
+        {
+            analyzer = new TurkishAnalyzer();
+        }
+        else
+        {
+            analyzer = new StandardAnalyzer();
+        }
+
+        QueryParser parser = new QueryParser(field, analyzer);
+
+
+        Query query = parser.parse(this.query);
+        searcher.search(query, 100);
+
+        List<Makale> makaleler = doPagingSearch2(searcher, query);
+        var18.close();
+        return makaleler;
+    }
+
+    private List<Makale> doPagingSearch2(IndexSearcher searcher, Query query) throws IOException
+    {
+        TopDocs results = searcher.search(query, 1000);
+        ScoreDoc[] hits = results.scoreDocs;
+        int numTotalHits = results.totalHits;
+        List<Makale> makaleList = new ArrayList<>();
+
+        if (hits.length > 0)
+        {
+            for (int i = 0; i < hits.length; i++)
+            {
+                Document line = searcher.doc(hits[i++].doc);
+                String page = line.get("path");
+                String baslik = line.get("baslik");
+                String yil = line.get("yil");
+                String yazarlar = line.get("yazarlar");
+                String anahtarlar = line.get("anahtarlar");
+                String doi = line.get("doi");
+                String ozet = line.get("ozet");
+                Makale makale = new Makale();
+                makale.setBaslik(baslik);
+                makale.setYil(yil);
+                makale.setYazarlar(yazarlar);
+                makale.setAnahtarlar(anahtarlar);
+                makale.setDoi(doi);
+                makale.setOzet(ozet);
+                makaleList.add(makale);
+            }
+        }
+        return makaleList;
     }
 
     public static void main(String[] args) throws Exception
@@ -294,5 +366,45 @@ public class MySearcher
         {
             System.out.println("Başlık okunamadı");
         }
+    }
+
+    public String getIndeks()
+    {
+        return indeks;
+    }
+
+    public void setIndeks(String indeks)
+    {
+        this.indeks = indeks;
+    }
+
+    public String getField()
+    {
+        return field;
+    }
+
+    public void setField(String field)
+    {
+        this.field = field;
+    }
+
+    public String getQuery()
+    {
+        return query;
+    }
+
+    public void setQuery(String query)
+    {
+        this.query = query;
+    }
+
+    public String getAnalyser()
+    {
+        return analyser;
+    }
+
+    public void setAnalyser(String analyser)
+    {
+        this.analyser = analyser;
     }
 }

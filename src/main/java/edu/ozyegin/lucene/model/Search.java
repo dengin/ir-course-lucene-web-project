@@ -11,7 +11,7 @@ public class Search
     {
         try
         {
-            MySearcher.main(new String[]{"-index", "D:\\Kisisel\\Ozyegin\\Dersler\\Donem1\\InformationRetrieval\\Proje\\Makaleler\\Openaire\\yeni\\index"
+            MySearcher.main(new String[]{"-index", "D:\\Kisisel\\Ozyegin\\Dersler\\Donem1\\InformationRetrieval\\Proje\\Makaleler\\Openaire\\yeni\\index\\indeks_tur_baslik1.0_anahtar1.0_ozet1.0"
                     , "-field", "baslik"
             });
         }

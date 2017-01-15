@@ -1,11 +1,16 @@
 package edu.ozyegin.lucene.controller;
 
+import edu.ozyegin.lucene.model.MyIndexer;
+
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * User: TTEDEMIRCIOGLU
@@ -17,10 +22,10 @@ import java.io.Serializable;
 public class IndexController implements Serializable
 {
     public String makaleDizini;
-    public String indeksDizini;
-    public long baslik = 1L;
-    public long anahtarlar = 1L;
-    public long ozet = 1L;
+    public String indeksAnaDizini;
+    public float baslik = 1L;
+    public float anahtarlar = 1L;
+    public float ozet = 1L;
     public boolean islemBasladi;
     public String analyser;
 
@@ -33,23 +38,34 @@ public class IndexController implements Serializable
     {
         try
         {
-            if (this.makaleDizini == null || this.makaleDizini.trim().equals(""))
-            {
-                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Makale dizini seçilmeli", null));
-            }
-            if (this.indeksDizini == null || this.indeksDizini.trim().equals(""))
-            {
-                FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "İndeks dizini seçilmeli", null));
-            }
-
+            indeksIsleminiBaslat();
             islemBasladi = true;
-            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "İndeksleme işlemi başladı", null));
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "İndeksleme işlemi tamamlandı", null));
         }
         catch (Exception exception)
         {
 //            RequestContext.getCurrentInstance().addCallbackParam("showDialog", false);
-            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "İndeksleme işleminde hata oluştu", exception.getMessage()));
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, ("İndeksleme işleminde hata oluştu: " + exception.getMessage()), exception.getMessage()));
         }
+    }
+
+    private void indeksIsleminiBaslat() throws Exception
+    {
+        if (this.makaleDizini == null || this.makaleDizini.trim().equals(""))
+        {
+            throw new Exception("Makale dizini seçilmeli");
+        }
+        if (this.indeksAnaDizini == null || this.indeksAnaDizini.trim().equals(""))
+        {
+            throw new Exception("İndeks ana dizini seçilmeli");
+        }
+        Path makaleKlasoru = Paths.get(this.getMakaleDizini(), new String[0]);
+        if (!Files.isReadable(makaleKlasoru))
+        {
+            throw new Exception("Makale dizini (" + makaleKlasoru.toAbsolutePath() + ") yok ya da okunabilir değil, lütfen kontrol ediniz");
+        }
+        MyIndexer myIndexer = new MyIndexer(this.indeksAnaDizini, this.makaleDizini, this.baslik, this.anahtarlar, this.ozet, this.analyser);
+        myIndexer.indexData();
     }
 
     public String getMakaleDizini()
@@ -62,42 +78,42 @@ public class IndexController implements Serializable
         this.makaleDizini = makaleDizini;
     }
 
-    public String getIndeksDizini()
+    public String getIndeksAnaDizini()
     {
-        return indeksDizini;
+        return indeksAnaDizini;
     }
 
-    public void setIndeksDizini(String indeksDizini)
+    public void setIndeksAnaDizini(String indeksAnaDizini)
     {
-        this.indeksDizini = indeksDizini;
+        this.indeksAnaDizini = indeksAnaDizini;
     }
 
-    public long getBaslik()
+    public float getBaslik()
     {
         return baslik;
     }
 
-    public void setBaslik(long baslik)
+    public void setBaslik(float baslik)
     {
         this.baslik = baslik;
     }
 
-    public long getAnahtarlar()
+    public float getAnahtarlar()
     {
         return anahtarlar;
     }
 
-    public void setAnahtarlar(long anahtarlar)
+    public void setAnahtarlar(float anahtarlar)
     {
         this.anahtarlar = anahtarlar;
     }
 
-    public long getOzet()
+    public float getOzet()
     {
         return ozet;
     }
 
-    public void setOzet(long ozet)
+    public void setOzet(float ozet)
     {
         this.ozet = ozet;
     }
