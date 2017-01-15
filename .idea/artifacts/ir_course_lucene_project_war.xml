@@ -6,6 +6,7 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="lib">
           <element id="library" level="project" name="lucene-analyzers-common-6.3.0" />
+          <element id="library" level="project" name="PrimeFaces-5.2" />
         </element>
       </element>
     </root>

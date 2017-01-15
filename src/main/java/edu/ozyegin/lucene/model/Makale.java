@@ -17,6 +17,7 @@ public class Makale implements Serializable
     private String yazarTamAdi;
     private String doi;
     private String ozet;
+    private float aramaSkoru;
 
     public String getBaslik()
     {
@@ -96,6 +97,16 @@ public class Makale implements Serializable
     public void setAdres(String adres)
     {
         this.adres = adres;
+    }
+
+    public float getAramaSkoru()
+    {
+        return aramaSkoru;
+    }
+
+    public void setAramaSkoru(float aramaSkoru)
+    {
+        this.aramaSkoru = aramaSkoru;
     }
 
     public String getYazarBilgisi()

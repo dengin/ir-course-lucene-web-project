@@ -52,8 +52,8 @@ public class MySearcher implements Serializable
 
     public List<Makale> search() throws IOException, ParseException
     {
-        DirectoryReader var18 = DirectoryReader.open(FSDirectory.open(Paths.get(this.indeks, new String[0])));
-        IndexSearcher searcher = new IndexSearcher(var18);
+        DirectoryReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(this.indeks, new String[0])));
+        IndexSearcher searcher = new IndexSearcher(reader);
         Analyzer analyzer;
         if (this.analyser != null && this.analyser.equals("Turkce"))
         {
@@ -71,7 +71,7 @@ public class MySearcher implements Serializable
         searcher.search(query, 100);
 
         List<Makale> makaleler = doPagingSearch2(searcher, query);
-        var18.close();
+        reader.close();
         return makaleler;
     }
 
@@ -80,12 +80,13 @@ public class MySearcher implements Serializable
         TopDocs results = searcher.search(query, 1000);
         ScoreDoc[] hits = results.scoreDocs;
         int numTotalHits = results.totalHits;
-        List<Makale> makaleList = new ArrayList<>();
+        List<Makale> makaleList = new ArrayList();
 
         if (hits.length > 0)
         {
             for (int i = 0; i < hits.length; i++)
             {
+                float searchScore = hits[i].score;
                 Document line = searcher.doc(hits[i++].doc);
                 String adres = line.get("path");
                 String baslik = line.get("baslik");
@@ -96,6 +97,7 @@ public class MySearcher implements Serializable
                 String doi = line.get("doi");
                 String ozet = line.get("ozet");
                 Makale makale = new Makale();
+                makale.setAramaSkoru(searchScore);
                 makale.setAdres(adres);
                 makale.setBaslik(baslik);
                 makale.setYil(yil);

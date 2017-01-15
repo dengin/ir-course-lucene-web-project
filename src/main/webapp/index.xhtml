@@ -7,11 +7,11 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
-<ui:include src="menu.xhtml"/>
 <h:head>
     <title>İndeks İşlemleri</title>
 </h:head>
 <h:body>
+    <ui:include src="menu.xhtml"/>
     <h:form>
         <p:outputPanel id="outputPanelId" style="margin-top: 20px; font-size: smaller; width: 70%;">
             <p:panelGrid style="width: 100%">
@@ -44,7 +44,7 @@
                 </p:row>
                 <p:row>
                     <p:column colspan="2" style="text-align: center">
-                        Makale alanlarının ağırlıkları
+                        <h:outputLabel style="width: 100%" value="Makale alanlarının ağırlıkları"/>
                     </p:column>
                 </p:row>
                 <p:row>
