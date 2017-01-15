@@ -161,7 +161,8 @@ public class MyIndexer
                     StringField pathField = new StringField("path", file.toPath().toString(), Field.Store.YES);
                     String baslik = eElement.getElementsByTagName("baslik").item(0).getTextContent();
                     String yil = eElement.getElementsByTagName("yil").item(0).getTextContent();
-                    String yazarlar = eElement.getElementsByTagName("yazarlar").item(0).getTextContent();
+                    String yazarId = eElement.getElementsByTagName("id") != null ? eElement.getElementsByTagName("id").item(0).getTextContent() : "";
+                    String yazarTamAdi = eElement.getElementsByTagName("tamAdi") != null ? eElement.getElementsByTagName("tamAdi").item(0).getTextContent() : "";
                     String anahtarlar = eElement.getElementsByTagName("anahtarlar").item(0).getTextContent();
                     String doi = eElement.getElementsByTagName("doi").item(0).getTextContent();
                     String ozet = eElement.getElementsByTagName("ozet").item(0).getTextContent();
@@ -170,7 +171,8 @@ public class MyIndexer
 
                     TextField baslikField = new TextField("baslik", baslik, Field.Store.YES);
                     TextField yilField = new TextField("yil", yil, Field.Store.YES);
-                    TextField yazarlarField = new TextField("yazarlar", yazarlar, Field.Store.YES);
+                    TextField yazarIdField = new TextField("yazarId", yazarId, Field.Store.YES);
+                    TextField yazarTamAdiField = new TextField("yazarTamAdi", yazarTamAdi, Field.Store.YES);
                     TextField anahtarlarField = new TextField("anahtarlar", anahtarlar, Field.Store.YES);
                     TextField doiField = new TextField("doi", doi, Field.Store.YES);
                     TextField ozetField = new TextField("ozet", ozet, Field.Store.YES);
@@ -183,7 +185,8 @@ public class MyIndexer
                     document.add(new LongPoint("modified", new long[]{lastModifiedTime}));
                     document.add(baslikField);
                     document.add(yilField);
-                    document.add(yazarlarField);
+                    document.add(yazarIdField);
+                    document.add(yazarTamAdiField);
                     document.add(anahtarlarField);
                     document.add(doiField);
                     document.add(ozetField);

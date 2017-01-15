@@ -9,23 +9,14 @@ import java.io.Serializable;
  */
 public class Makale implements Serializable
 {
-    private String makaleIsmi;
+    private String adres;
     private String baslik;
     private String yil;
     private String anahtarlar;
-    private String yazarlar;
+    private String yazarId;
+    private String yazarTamAdi;
     private String doi;
     private String ozet;
-
-    public String getMakaleIsmi()
-    {
-        return makaleIsmi;
-    }
-
-    public void setMakaleIsmi(String makaleIsmi)
-    {
-        this.makaleIsmi = makaleIsmi;
-    }
 
     public String getBaslik()
     {
@@ -57,14 +48,24 @@ public class Makale implements Serializable
         this.anahtarlar = anahtarlar;
     }
 
-    public String getYazarlar()
+    public String getYazarId()
     {
-        return yazarlar;
+        return yazarId;
     }
 
-    public void setYazarlar(String yazarlar)
+    public void setYazarId(String yazarId)
     {
-        this.yazarlar = yazarlar;
+        this.yazarId = yazarId;
+    }
+
+    public String getYazarTamAdi()
+    {
+        return yazarTamAdi;
+    }
+
+    public void setYazarTamAdi(String yazarTamAdi)
+    {
+        this.yazarTamAdi = yazarTamAdi;
     }
 
     public String getDoi()
@@ -85,5 +86,33 @@ public class Makale implements Serializable
     public void setOzet(String ozet)
     {
         this.ozet = ozet;
+    }
+
+    public String getAdres()
+    {
+        return adres;
+    }
+
+    public void setAdres(String adres)
+    {
+        this.adres = adres;
+    }
+
+    public String getYazarBilgisi()
+    {
+        String bilgi = "";
+        if (yazarTamAdi != null && !yazarTamAdi.trim().equals(""))
+        {
+            bilgi += yazarTamAdi;
+        }
+        if (yazarId != null && !yazarId.trim().equals(""))
+        {
+            if (bilgi.length() > 0)
+            {
+                bilgi += "\n";
+            }
+            bilgi += yazarId;
+        }
+        return bilgi;
     }
 }

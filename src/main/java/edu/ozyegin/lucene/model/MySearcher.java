@@ -87,17 +87,20 @@ public class MySearcher implements Serializable
             for (int i = 0; i < hits.length; i++)
             {
                 Document line = searcher.doc(hits[i++].doc);
-                String page = line.get("path");
+                String adres = line.get("path");
                 String baslik = line.get("baslik");
                 String yil = line.get("yil");
-                String yazarlar = line.get("yazarlar");
+                String yazarId = line.get("yazarId");
+                String yazarTamAdi = line.get("yazarTamAdi");
                 String anahtarlar = line.get("anahtarlar");
                 String doi = line.get("doi");
                 String ozet = line.get("ozet");
                 Makale makale = new Makale();
+                makale.setAdres(adres);
                 makale.setBaslik(baslik);
                 makale.setYil(yil);
-                makale.setYazarlar(yazarlar);
+                makale.setYazarId(yazarId);
+                makale.setYazarTamAdi(yazarTamAdi);
                 makale.setAnahtarlar(anahtarlar);
                 makale.setDoi(doi);
                 makale.setOzet(ozet);
