@@ -6,15 +6,19 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://java.sun.com/jsf/facelets">
-
 <h:head>
     <title>İndeks İşlemleri</title>
 </h:head>
 <h:body>
     <ui:include src="menu.xhtml"/>
-    <h:form>
-        <p:outputPanel id="outputPanelId" style="margin-top: 20px; font-size: smaller; width: 70%;">
-            <p:panelGrid style="width: 100%">
+    <h:form id="indexFormId">
+        <p:outputPanel id="outputPanelId" style="margin-top: 20px; width: 70%;">
+            <p:panelGrid style="width: 100%;">
+                <p:row>
+                    <p:column styleClass="ui-column-title" colspan="2" style="text-align: center; width: 100%">
+                        <h:outputLabel style="width: 100%" value="Lucene parametreleri"/>
+                    </p:column>
+                </p:row>
                 <p:row>
                     <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="Makalelerin Dizini"/>
@@ -43,7 +47,7 @@
                     </p:column>
                 </p:row>
                 <p:row>
-                    <p:column colspan="2" style="text-align: center">
+                    <p:column styleClass="ui-column-title" colspan="2" style="text-align: center; width: 100%">
                         <h:outputLabel style="width: 100%" value="Makale alanlarının ağırlıkları"/>
                     </p:column>
                 </p:row>
@@ -76,15 +80,12 @@
                         <p:commandButton style="width: 300px; margin: 20px;" value="İndeksleme İşlemini Başlat"
                                          actionListener="#{indexController.indeksle}"
                                          process="outputPanelId"
-                                         update="outputPanelId"/>
+                                         update="menuFormId:messageGrowl, outputPanelId"/>
                     </p:column>
                 </p:row>
             </p:panelGrid>
             <p:growl/>
         </p:outputPanel>
-        <p:outputLabel>
-
-        </p:outputLabel>
     </h:form>
 </h:body>
 </html>

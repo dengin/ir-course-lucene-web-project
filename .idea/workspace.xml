@@ -20,61 +20,601 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af083aab-75ba-4012-8771-bb324f0528a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/Yazar.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ir_course_lucene_project_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ir_course_lucene_project_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/PrimeFaces_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_faces_javax_faces_api_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lucene_analyzers_common_6_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/HelloBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/LuceneController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/classes/edu/ozyegin/lucene/controller/HelloBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/classes/edu/ozyegin/lucene/controller/LuceneController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/classes/edu/ozyegin/lucene/model/LuceneDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/classes/edu/ozyegin/lucene/model/MyIndexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/classes/edu/ozyegin/lucene/model/MySearcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/classes/edu/ozyegin/lucene/model/Search.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/el-ri-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/jsf-api-2.1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/jsf-impl-2.1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/jsp-api-2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/lucene-analyzers-common-6.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/lucene-core-6.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/lucene-demo-6.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/lucene-queryparser-6.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/primefaces-5.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JavaServerFaces/welcome.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/ozyegin/lucene/controller/HelloBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/ozyegin/lucene/controller/LuceneController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/ozyegin/lucene/model/LuceneDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/ozyegin/lucene/model/MyIndexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/ozyegin/lucene/model/MySearcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/ozyegin/lucene/model/Search.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/SearchController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/Makale.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/Makale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java" afterPath="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/style/light-green-waves.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/menu.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/menu.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/welcome.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/search.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/search.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/search.xhtml" />
     </list>
     <ignored path="JavaServerFaces.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path=".idea/" />
+    <ignored path="src/main/webapp/style/primeui/primeui.min.js" />
+    <ignored path="src/main/webapp/style/primeui/primeelements.js" />
+    <ignored path="src/main/webapp/style/primeui/primeelements.min.js" />
+    <ignored path="src/main/webapp/style/primeui/primeui-all.css" />
+    <ignored path="src/main/webapp/style/primeui/primeui-all.min.js" />
+    <ignored path="src/main/webapp/style/primeui/primeui-ng-all.css" />
+    <ignored path="src/main/webapp/style/primeui/primeui.js" />
+    <ignored path="src/main/webapp/style/primeui/primeui-ng-all.js" />
+    <ignored path="src/main/webapp/style/primeui/primeui-all.min.css" />
+    <ignored path="src/main/webapp/style/primeui/primeui.min.css" />
+    <ignored path="src/main/webapp/style/primeui/primeui-ng-all.min.js" />
+    <ignored path="src/main/webapp/style/primeui/primeui.css" />
+    <ignored path="src/main/webapp/style/primeui/primeui-all.js" />
+    <ignored path="src/main/webapp/style/primeui/primeui-ng-all.min.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_glass_65_ffffff_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_glass_75_dadada_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-icons_888888_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/sprite.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-default.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sam/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/active.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_flat_65_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_glass_40_111111_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/header.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-icons_4ca300_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/hover.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-icons_ededed_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_glass_55_1c1c1c_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-icons_ffcf29_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/ui-icons_bbbbbb_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/home/images/default.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_glass_20_3d3d3d_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_glass_20_474747_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_glass_40_0099e0_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_flat_50_575757_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_glass_40_ffc73d_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-icons_a83300_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_flat_30_cccccc_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-icons_eeeeee_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-icons_0099e0_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cruze/images/ui-bg_gloss-wave_25_333333_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_glass_65_ffffff_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_glass_75_dadada_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/modalClose.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-icons_888888_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/modalClose@2x.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/slider_handles.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/jGrowl-close.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/icons_16.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/slider_handles@2x.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/delta/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_flat_55_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_glass_65_ffffff_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-icons_0073ea_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-icons_666666_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-icons_ff0084_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_flat_0_eeeeee_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/flick/images/ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/fonts/roboto-v15-latin-regular.svg" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/fonts/roboto-v15-latin-regular.eot" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/fonts/roboto-v15-latin-regular.woff" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/fonts/roboto-v15-latin-regular.ttf" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/fonts/roboto-v15-latin-regular.woff2" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_glass_65_ffffff_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_glass_75_dadada_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/slider_handles.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/icons_16.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/slider_handles@2x.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/omega/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_glass_75_79c9ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_glass_45_0078ae_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_f5e175_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_e0fdff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_glass_55_f8da4e_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_flat_55_999999_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_d8e7f3_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_f7a50d_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_056b93_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_0078ae_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-icons_fcd113_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_d19405_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_ed9f26_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_ffe180_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_3d3d3d_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_fadc7a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_flat_30_cccccc_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_bd7b00_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-icons_eb990f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/sunny/images/ui-bg_gloss-wave_45_817865_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_highlight-soft_35_adadad_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_cccccc_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_highlight-soft_60_dddddd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_highlight-hard_15_888888_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_highlight-hard_55_555555_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_666666_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_inset-soft_15_121212_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_aaaaaa_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_gloss-wave_16_121212_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_c98000_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_f29a00_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/vader/images/ui-icons_bbbbbb_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_highlight-hard_80_c4c4c4_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_flat_0_2d5972_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_inset-hard_65_85b2cb_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_2d5972_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_highlight-hard_80_85b2cb_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_flat_100_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_3a6983_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_highlight-soft_75_85b2cb_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_38667f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_898989_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_inset-hard_65_c4c4c4_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_highlight-soft_100_c4c4c4_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_flat_0_4f4f4f_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_616161_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_highlight-hard_80_e3e3e3_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/aristo/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_highlight-soft_35_00a6dd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_d399ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_f4f4f9_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_diagonals-thick_50_00a6dd_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_highlight-soft_15_8A56B2_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_flat_100_f1f1f1_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_inset-soft_100_e1e1e1_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_ff8f8f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_fafafa_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_highlight-soft_15_9eca38_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_highlight-soft_15_242122_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_00a6dd_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_eaffb9_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_highlight-soft_15_65358a_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_highlight-soft_15_ca3838_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_inset-soft_15_242122_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-icons_304915_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/rocket/images/ui-bg_inset-soft_15_242122_1x100 - Copy.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_flat_65_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-icons_004276_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_glass_55_fbf8ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-icons_cc0000_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/blitzer/images/ui-bg_flat_0_333333_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/active.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/header.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-icons_3d80b3_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-icons_72a7cf_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bluesky/images/default.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_dots-small_30_a32d00_2x2.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-icons_9ccdfc_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_dots-medium_30_0b58a2_4x4.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_dots-small_20_333333_2x2.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_flat_40_292929_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_dots-small_40_00498f_2x2.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_gloss-wave_20_111111_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-icons_98d2fb_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-icons_00498f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dot-luv/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/glass-x/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/glass-x/images/active.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/glass-x/images/header.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/glass-x/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/glass-x/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/glass-x/images/default.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-icons_72b42d_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-icons_4eb305_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_inset-soft_10_285c00_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_glass_55_fbf5d0_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/le-frog/images/ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_d8e7f3_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_469bdd_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_f9bd01_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_6da8d5_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_217bc0_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/redmond/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_flat_55_994d53_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-icons_734d99_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-icons_ebccce_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_flat_55_fafafa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-icons_a8a3ae_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_highlight-soft_25_30273a_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-icons_8d78a5_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_highlight-soft_45_5f5964_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/eggplant/images/ui-bg_gloss-wave_30_3d3644_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-icons_ff7519_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_glass_25_cb842e_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_glass_70_ede4d4_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-icons_f08000_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-icons_f35f07_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_glass_100_f5f0e5_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-icons_c47a23_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/humanity/images/ui-icons_cb672b_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-icons_8fddff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-icons_f4f4f9_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_inset-soft_35_191921_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-icons_ff8f8f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_highlight-soft_35_191921_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-icons_fafafa_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-icons_a1ddff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_flat_10_3d4858_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_highlight-soft_15_191921_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_flat_100_18181f_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_flat_100_583d3d_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/midnight/images/ui-bg_highlight-soft_15_32323d_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-icons_fbc856_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_flat_55_c0402a_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-icons_70b2e1_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-icons_999999_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_glass_60_eeeeee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_glass_100_f8f8f8_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-icons_3383bb_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_inset-hard_75_999999_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_flat_55_eeeeee_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_flat_0_eeeeee_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_glass_35_dddddd_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/overcast/images/ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/afterdark/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/afterdark/images/ui-icons-light.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/afterdark/images/ui-icons-dark.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/afternoon/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/afternoon/images/ui-icons-light.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/afternoon/images/ui-icons-dark.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/afterwork/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/afterwork/images/ui-icons-light.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/afterwork/images/ui-icons-dark.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_flat_65_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_glass_40_111111_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-icons_4ca300_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-icons_ededed_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_glass_55_1c1c1c_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-icons_ffcf29_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/black-tie/images/ui-icons_bbbbbb_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bootstrap/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/bootstrap/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/bootstrap/images/ui-icons_333333_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-icons_3d80b3_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-icons_2694e8_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-icons_72a7cf_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-icons_cccccc_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-icons_4b8e0b_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_glass_40_ffc73d_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-icons_a83300_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_flat_30_cccccc_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_inset-soft_10_201913_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_gloss-wave_25_453326_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-icons_add978_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_gloss-wave_20_1c160d_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_highlight-soft_20_619226_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-icons_9bcc60_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_highlight-soft_20_201913_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-icons_e3ddc9_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_gloss-wave_30_44372c_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-bg_glass_15_5f391b_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/mint-choc/images/ui-icons_f1fd86_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/active.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-icons_888888_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/header.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/hover.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/casablanca/images/default.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-icons_c02669_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_dots-medium_80_ffff38_4x4.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_white-lines_85_f7f7ba_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_diagonals-small_75_ccd232_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_flat_75_ba9217_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_diagonals-small_40_db4865_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_diagonals-small_50_ff3853_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-icons_e1e463_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-icons_88a206_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-icons_ffeb33_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/hot-sneaks/images/ui-bg_dots-small_35_35414f_2x2.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-icons_888888_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-icons_454545_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-icons_2e83ff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_flat_0_4c4c4c_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_gloss-wave_55_000000_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_gloss-wave_85_9fda58_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-icons_9fda58_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_flat_0_303030_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-icons_b8ec79_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_diagonals-small_50_262626_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_glass_60_000000_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-icons_1f1f1f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_glass_55_f1fbe5_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-icons_000000_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_glass_40_0a0a0a_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/trontastic/images/ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-icons_fcdd4a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-icons_0b54d5_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_flat_0_e69700_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_diagonals-thick_20_e69700_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_flat_0_e6b900_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-icons_0a82eb_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-icons_5fa5e3_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/excite-bike/images/ui-bg_inset-hard_100_eeeeee_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_inset-soft_30_f58400_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-icons_cccccc_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_glass_40_0078a3_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-icons_4b8e0b_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_glass_40_ffc73d_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_glass_20_555555_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-icons_a83300_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_flat_30_cccccc_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-darkness/images/ui-bg_gloss-wave_25_333333_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-icons_847e71_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_glass_55_fcf0ba_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-icons_cd0a0a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-icons_808080_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-icons_eeeeee_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-icons_8dc262_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/south-street/images/ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_flat_75_ddd4b0_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_ff7519_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_diamond_10_4f4221_10x8.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_diamond_25_675423_10x8.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_diamond_8_261803_10x8.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_e8e2b5_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_e9cd86_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_diamond_20_372806_10x8.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_070603_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_diamond_25_d5ac5d_10x8.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_f2ec64_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-bg_diamond_8_443113_10x8.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_efec9f_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/swanky-purse/images/ui-icons_f9f2bd_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-icons_228ef1_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/theme.css" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-icons_fbdb93_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-icons_8c291d_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-icons_222222_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-icons_ffffff_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-icons_3572ac_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-icons_b83400_256x240.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_65_654b24_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/themes/pepper-grinder/images/ui-bg_fine-grain_68_b83400_60x60.png" />
+    <ignored path="src/main/webapp/style/primeui/plugins/jquery.mousewheel.js" />
+    <ignored path="src/main/webapp/style/primeui/plugins/rangyinput.js" />
+    <ignored path="src/main/webapp/style/primeui/plugins/plugins-all.js" />
+    <ignored path="src/main/webapp/style/primeui/plugins/cursorposition.js" />
+    <ignored path="src/main/webapp/style/primeui/plugins/mustache.min.js" />
+    <ignored path="src/main/webapp/style/primeui/plugins/touchswipe.js" />
+    <ignored path="src/main/webapp/style/primeui/images/loading.gif" />
+    <ignored path="src/main/webapp/style/primeui/images/loadingbar.gif" />
+    <ignored path="src/main/webapp/style/primeui/images/rating.png" />
+    <ignored path="src/main/webapp/style/primeui/images/password-meter.png" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +635,8 @@
       <file leaf-file-name="MySearcher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+            <state relative-caret-position="264">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,27 +644,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/SearchController.java">
+      <file leaf-file-name="primefaces-mobile.js" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/primefaces-5.2.jar!/META-INF/resources/primefaces/primefaces-mobile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4906">
-              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9946#9947#0" expanded="true" />
-                <element signature="e#9982#9983#0" expanded="true" />
-                <element signature="e#10684#10685#0" expanded="true" />
-                <element signature="e#10724#10725#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="0" column="9704" selection-start-line="0" selection-start-column="9704" selection-end-line="0" selection-end-column="9704" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/search.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            <state relative-caret-position="128">
+              <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -133,8 +667,8 @@
       <file leaf-file-name="menu.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/menu.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            <state relative-caret-position="176">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -143,21 +677,9 @@
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="34" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="244">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Yazar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/Yazar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-              <folding>
-                <element signature="e#1704#1705#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -202,10 +724,10 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/Yazar.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/LuceneDemo.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/menu.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/search.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/LuceneDemo.java" />
       </list>
     </option>
   </component>
@@ -264,6 +786,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -340,11 +864,35 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IRCourseLuceneProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ir-course-lucene-web-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1238,7 +1786,8 @@
       <workItem from="1484495472210" duration="5230000" />
       <workItem from="1484502762239" duration="10620000" />
       <workItem from="1484513513338" duration="2818000" />
-      <workItem from="1484516549914" duration="2878000" />
+      <workItem from="1484516549914" duration="3102000" />
+      <workItem from="1484541296800" duration="10699000" />
     </task>
     <task id="LOCAL-00001" summary="Third">
       <created>1484439343189</created>
@@ -1261,12 +1810,19 @@
       <option name="project" value="LOCAL" />
       <updated>1484482926139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Sixth">
+      <created>1484519441316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1484519441316</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TaskboardConfiguration" showUserStories="true" showDefects="true" showBlocked="true" showStatuses="&lt;all&gt;" assignTask="false" deactivateItem="false" activateItem="false" />
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73799000" />
+    <option name="totallyTimeSpent" value="84722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
@@ -1290,13 +1846,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="UniversityAndroid" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56208426" sideWeight="0.49785408" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34035477" sideWeight="0.49785408" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37583148" sideWeight="0.49517167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19420601" sideWeight="0.4869707" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19420601" sideWeight="0.51302934" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="HP ALI" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22616407" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1304,7 +1861,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="864" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1344,38 +1900,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/HelloBean.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/menu.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/search.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/LuceneController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
@@ -1476,11 +2000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#4122#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
-            <element signature="e#1219#1220#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1580,14 +2099,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/LuceneController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="22" selection-start-line="12" selection-start-column="8" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MyIndexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1611,16 +2123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1631,35 +2133,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/Yazar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
+        <state relative-caret-position="902">
           <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
           <folding>
-            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="34" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/menu.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/search.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,23 +2145,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="335" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/controller/SearchController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/primeui/primeui.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4906">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="1" column="14600" selection-start-line="1" selection-start-column="14600" selection-end-line="1" selection-end-column="14600" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/primeui/primeui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="3543" column="34" selection-start-line="3543" selection-start-column="34" selection-end-line="3543" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/primeui/primeui-all.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="31730" selection-start-line="10" selection-start-column="31730" selection-end-line="10" selection-end-column="31730" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/primeui/primeui-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1196">
+          <caret line="25688" column="52" selection-start-line="25688" selection-start-column="52" selection-end-line="25688" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/primefaces-5.2.jar!/META-INF/resources/primefaces/primefaces-mobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="0" column="9704" selection-start-line="0" selection-start-column="9704" selection-end-line="0" selection-end-column="9704" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/primefaces-5.2.jar!/META-INF/resources/primefaces/core/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9704" selection-start-line="0" selection-start-column="9704" selection-end-line="0" selection-end-column="9704" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/ozyegin/lucene/model/MySearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9946#9947#0" expanded="true" />
-            <element signature="e#9982#9983#0" expanded="true" />
-            <element signature="e#10684#10685#0" expanded="true" />
-            <element signature="e#10724#10725#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/menu.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/search.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

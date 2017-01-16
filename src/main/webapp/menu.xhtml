@@ -17,28 +17,41 @@
     <meta http-equiv="Expires" content="0"/>
     <meta http-equiv="Last-Modified" content="0"/>
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate"/>
-    <title><ui:insert name="title">SOL 2.0</ui:insert></title>
-    <!--<link href="/style/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="/style/jquery/jquery-ui.css" rel="stylesheet" type="text/css"/>-->
+    <title><ui:insert name="title">IR Course Lucene Web Project</ui:insert></title>
+    <link href="/style/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/jquery/jquery-ui.css" rel="stylesheet" type="text/css"/>
     <!--<link href="/style/primeui/primeui-all.css" rel="stylesheet" type="text/css"/>-->
     <!--<link href="/style/jquery/jquery-ui.structure.css" rel="stylesheet" type="text/css"/>-->
-    <link href="/style/jquery/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
-    <!--<script src="/style/primeui/primeui-all.js" type="text/javascript"></script>-->
-    <script src="/style/jquery/jquery-ui.js" type="text/javascript"></script>
-    <script src="/style/jquery/external/jquery/jquery.js" type="text/javascript"></script>
+    <!--<link href="/style/jquery/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>-->
+    <script src="/style/primeui/primeui-all.js" type="text/javascript"></script>
+    <!--<script src="/style/jquery/jquery-ui.js" type="text/javascript"></script>-->
+    <!--<script src="/style/jquery/external/jquery/jquery.js" type="text/javascript"></script>-->
 </h:head>
-<body>
-<h:form>
-
-    <p:tabMenu activeIndex="#{param.i}" style="font-size: smaller;">
-        <p:menuitem value="İndeks İşlemleri" action="index.xhtml?faces-redirect=true" icon="ui-icon-star">
-            <f:param name="i" value="0"/>
-        </p:menuitem>
-        <p:menuitem value="Arama İşlemleri" action="search.xhtml?faces-redirect=true" icon="ui-icon-search">
-            <f:param name="i" value="1"/>
-        </p:menuitem>
-    </p:tabMenu>
-
+<style type="text/css">
+    .ui-growl{
+        width: 500px;!important;
+    }
+    .ui-growl-message{
+        width: 400px;!important;
+    }
+    .ui-column-title{
+        background: #f6f6f6;
+    }
+    .ui-datatable-odd{
+        background: none repeat scroll 0 0 #F2F5F9;
+    }
+</style>
+<body style="background-image: url('style/light-green-waves.jpg')">
+<h:form id="menuFormId">
+    <p:growl id="messageGrowl"/>
+    <p:outputPanel style="margin-top: 20px; width: 70%;">
+        <p:tabMenu activeIndex="#{param.i}">
+            <p:menuitem value="İndeks İşlemleri" action="index.xhtml?i=0&amp;faces-redirect=true" icon="ui-icon-star">
+            </p:menuitem>
+            <p:menuitem value="Arama İşlemleri" action="search.xhtml?i=1&amp;faces-redirect=true" icon="ui-icon-search">
+            </p:menuitem>
+        </p:tabMenu>
+    </p:outputPanel>
 </h:form>
 </body>
 </html>

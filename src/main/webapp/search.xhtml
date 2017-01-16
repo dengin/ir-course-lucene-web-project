@@ -6,41 +6,43 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://java.sun.com/jsf/facelets">
-
 <h:head>
     <title>Arama İşlemleri</title>
 </h:head>
 <h:body>
     <ui:include src="menu.xhtml"/>
-    <h:form id="formId" style="font-size: smaller">
-        <p:growl id="messageGrowl"/>
-
-        <p:outputPanel id="searchOutputPanelId" style="margin-top: 20px; width: 80%;">
+    <h:form id="formId">
+        <p:outputPanel id="searchOutputPanelId" style="margin-top: 20px; width: 70%;">
             <p:panelGrid id="searchOutputPanelGridId" style="width: 100%">
                 <p:row>
-                    <p:column style="width: 25%">
+                    <p:column styleClass="ui-column-title" colspan="3" style="text-align: center; width: 100%">
+                        <h:outputLabel style="width: 100%" value="Lucene parametreleri"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="İndeks Ana Dizini"/>
                     </p:column>
-                    <p:column style="width: 60%; border-right: none">
+                    <p:column style="width: 65%; border-right: none">
                         <p:inputText id="indeksAnaDiziniTextId" style="width: 100%" value="#{searchController.indeksAnaDizini}"/>
                     </p:column>
                     <p:column style="width: 15%; border-left: none">
                         <p:commandButton style="width:100%;" value="İndeksleri Getir"
                                          actionListener="#{searchController.dizinleriGetir}"
                                          process="@this, indeksAnaDiziniTextId"
-                                         update="messageGrowl, searchOutputPanelId"/>
+                                         update="menuFormId:messageGrowl, searchOutputPanelId"/>
                     </p:column>
                 </p:row>
                 <p:row>
-                    <p:column style="width: 25%">
+                    <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="İndeks Dizini"/>
                     </p:column>
-                    <p:column style="width: 60%; border-right: none">
+                    <p:column style="width: 65%; border-right: none">
                         <p:selectOneMenu id="indeksMenuId"
                                          disabled="#{searchController.indeksDizinleri eq null or searchController.indeksDizinleri.size() eq 0}"
                                          value="#{searchController.secilenIndeksDizini}" style="width:100%;">
                             <f:selectItems value="#{searchController.indeksDizinleri}" var="_indeks">
-                                <f:selectItem itemLabel="#{_indeks}" itemValue="#{_indeks}" />
+                                <f:selectItem itemLabel="#{_indeks}" itemValue="#{_indeks}"/>
                             </f:selectItems>
                         </p:selectOneMenu>
                     </p:column>
@@ -48,69 +50,70 @@
                     </p:column>
                 </p:row>
                 <p:row>
-                    <p:column style="width: 25%">
+                    <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="Analyser Seçimi"/>
                     </p:column>
-                    <p:column style="width: 60%; border-right: none">
+                    <p:column style="width: 65%; border-right: none">
                         <p:selectOneMenu value="#{searchController.analyser}" style="width: 200px">
-                            <f:selectItem itemLabel="Türkçe" itemValue="Turkce" />
-                            <f:selectItem itemLabel="Standart" itemValue="Standart" />
+                            <f:selectItem itemLabel="Türkçe" itemValue="Turkce"/>
+                            <f:selectItem itemLabel="Standart" itemValue="Standart"/>
                         </p:selectOneMenu>
                     </p:column>
                     <p:column style="border-left: none"/>
                 </p:row>
                 <p:row>
-                    <p:column colspan="3" style="text-align: center; width: 100%">
+                    <p:column styleClass="ui-column-title" colspan="3" style="text-align: center; width: 100%">
                         <h:outputLabel style="width: 100%" value="Arama parametreleri"/>
                     </p:column>
                 </p:row>
                 <p:row>
-                    <p:column style="width: 25%">
+                    <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="Başlık"/>
                     </p:column>
-                    <p:column style="width: 60%; border-right: none">
+                    <p:column style="width: 65%; border-right: none">
                         <p:inputText value="#{searchController.baslik}" style="width: 100%"/>
                     </p:column>
                     <p:column style="width: 15%; border-left: none">
                         <p:commandButton style="width:100%" value="Başlıkta Ara"
                                          actionListener="#{searchController.ara('baslik')}"
                                          process="searchOutputPanelId"
-                                         update="messageGrowl, searchOutputPanelId, formId:makaleOutputPanelId"/>
+                                         update="menuFormId:messageGrowl, searchOutputPanelId, formId:makaleOutputPanelId"/>
                     </p:column>
                 </p:row>
                 <p:row>
-                    <p:column style="width: 25%">
+                    <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="Anahtar Kelimeler"/>
                     </p:column>
-                    <p:column style="width: 60%; border-right: none">
+                    <p:column style="width: 65%; border-right: none">
                         <p:inputText value="#{searchController.anahtarlar}" style="width: 100%"/>
                     </p:column>
                     <p:column style="width: 15%; border-left: none">
                         <p:commandButton style="width:100%;" value="Anahtarda Ara"
                                          actionListener="#{searchController.ara('anahtarlar')}"
                                          process="searchOutputPanelId"
-                                         update="messageGrowl, searchOutputPanelId, formId:makaleOutputPanelId"/>
+                                         update="menuFormId:messageGrowl, searchOutputPanelId, formId:makaleOutputPanelId"/>
                     </p:column>
                 </p:row>
                 <p:row>
-                    <p:column style="width: 25%">
+                    <p:column style="width: 20%">
                         <h:outputLabel style="width: 100%" value="Özet"/>
                     </p:column>
-                    <p:column style="width: 60%; border-right: none">
+                    <p:column style="width: 65%; border-right: none">
                         <p:inputText value="#{searchController.ozet}" style="width: 100%"/>
                     </p:column>
                     <p:column style="width: 15%; border-left: none">
                         <p:commandButton style="width:100%;" value="Özette Ara"
                                          actionListener="#{searchController.ara('ozet')}"
                                          process="searchOutputPanelId"
-                                         update="messageGrowl, searchOutputPanelId, formId:makaleOutputPanelId"/>
+                                         update="menuFormId:messageGrowl, searchOutputPanelId, formId:makaleOutputPanelId"/>
                     </p:column>
                 </p:row>
             </p:panelGrid>
         </p:outputPanel>
-        <p:outputPanel id="makaleOutputPanelId" style="margin-top: 20px; width: 80%">
+        <p:outputPanel id="makaleOutputPanelId" style="margin-top: 20px; width: 70%">
             <p:dataTable id="makaleDataTableId"
                          rendered="#{searchController.makaleListesi ne null and searchController.makaleListesi.size() > 0}"
+                         style="font-size: smaller"
                          value="#{searchController.makaleListesi}"
                          var="_makale"
                          rows="5"
@@ -123,45 +126,68 @@
                          emptyMessage="Aradığınız kriterlere göre kayıt bulunamadı"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {NextPageLink} {LastPageLink}"
                          currentPageReportTemplate="Gösterilen kayıtlar {startRecord} - {endRecord} / {totalRecords}">
-                <p:column style="font-size: smaller;" headerText="Makale">
+                <f:facet name="header">
+                    <h:outputText value="Makale Sonuçları"/>
+                </f:facet>
+                <p:column headerText="Makale">
                     <h:outputText value="#{_makale.adres}"/>
                 </p:column>
-                <p:column style="font-size: smaller;" headerText="Başlık">
+                <p:column headerText="Başlık">
                     <h:outputText value="#{_makale.baslik}"/>
                 </p:column>
-                <p:column style="width:200px; font-size: smaller;" headerText="Yazarlar">
+                <p:column style="width:200px;" headerText="Yazarlar">
                     <h:outputText value="#{_makale.yazarBilgisi}"/>
                 </p:column>
-                <p:column style="width:50px; font-size: smaller;" headerText="Yıl">
+                <p:column style="width:50px;" headerText="Yıl">
                     <h:outputText value="#{_makale.yil}"/>
                 </p:column>
-                <p:column style="font-size: smaller;" headerText="Anahtar Kelimeler">
-                    <h:outputText id="anahtarKelimelerTextId" value="#{_makale.anahtarlar.substring(0, 50)}" rendered="#{_makale.anahtarlar ne null and _makale.anahtarlar.length() gt 50}"/>
-                    <p:tooltip style="font-size: smaller" value="#{_makale.anahtarlar}" for="anahtarKelimelerTextId"/>
+                <p:column headerText="Anahtar Kelimeler" style="text-align: justify">
+                    <h:outputText id="anahtarKelimelerTextId"
+                                  value="#{_makale.anahtarlar.substring(0, 50)}"
+                                  rendered="#{_makale.anahtarlar ne null and _makale.anahtarlar.length() gt 50}"/>
+                    <br/>
+                    <p:commandLink id="anahtarKelimelerCommandLinkId"
+                                   value="...devamı"
+                                   rendered="#{_makale.anahtarlar ne null and _makale.anahtarlar.length() gt 50}"/>
+                    <p:overlayPanel id="anahtarKelimelerOverlayPanelId"
+                                    for="anahtarKelimelerCommandLinkId"
+                                    hideEffect="fade"
+                                    rendered="#{_makale.anahtarlar ne null and _makale.anahtarlar.length() gt 50}">
+                        <h:outputText value="#{_makale.anahtarlar}"/>
+                    </p:overlayPanel>
                     <h:outputText value="#{_makale.anahtarlar}" rendered="#{_makale.anahtarlar ne null and _makale.anahtarlar.length() le 50}"/>
                 </p:column>
-                <p:column style="width:100px; font-size: smaller;" headerText="DOI">
+                <p:column style="width:100px;" headerText="DOI">
                     <h:outputText value="#{_makale.doi}"/>
                 </p:column>
-                <p:column style="font-size: smaller;" headerText="Özet">
-                    <div>
-                        <h:outputText id="ozetTextId" value="#{_makale.ozet.substring(0, 100)}" rendered="#{_makale.ozet ne null and _makale.ozet.length() gt 100}"/>
-                        <p:tooltip value="#{_makale.ozet}" for="ozetTextId"/>
-                        <h:outputText value="#{_makale.ozet}" rendered="#{_makale.ozet ne null and _makale.ozet.length() le 100}"/>
-                    </div>
-
+                <p:column headerText="Özet" style="text-align: justify">
+                    <h:outputText id="ozetTextId"
+                                  value="#{_makale.ozet.substring(0, 100)}"
+                                  rendered="#{_makale.ozet ne null and _makale.ozet.length() gt 100}"/>
+                    <br/>
+                    <p:commandLink id="ozetCommandLinkId"
+                                   value="...devamı"
+                                   rendered="#{_makale.ozet ne null and _makale.ozet.length() gt 100}"/>
+                    <p:overlayPanel id="ozetOverlayPanelId"
+                                    for="ozetCommandLinkId"
+                                    hideEffect="fade"
+                                    rendered="#{_makale.ozet ne null and _makale.ozet.length() gt 100}">
+                        <h:outputText value="#{_makale.ozet}"/>
+                    </p:overlayPanel>
+                    <h:outputText value="#{_makale.ozet}" rendered="#{_makale.ozet ne null and _makale.ozet.length() le 100}"/>
                 </p:column>
                 <f:facet name="footer">
                     <p:commandButton style="width:400px; margin: 20px;" value="Yazarları Değerlendir"
                                      actionListener="#{searchController.yazarlariSirala}"
                                      process="formId:makaleOutputPanelId"
-                                     update="formId:yazarOutputPanelId"/>
+                                     update="menuFormId:messageGrowl, formId:yazarOutputPanelId"/>
                 </f:facet>
             </p:dataTable>
         </p:outputPanel>
-        <p:outputPanel id="yazarOutputPanelId" style="margin-top: 20px; width: 80%">
+        <p:outputPanel id="yazarOutputPanelId" style="margin-top: 20px; width: 70%">
             <p:dataTable id="yazarDataTableId"
                          rendered="#{searchController.yazarListesi ne null and searchController.yazarListesi.size() > 0}"
+                         style="font-size: smaller"
                          value="#{searchController.yazarListesi}"
                          var="_yazar"
                          rows="10"
@@ -174,17 +200,23 @@
                          emptyMessage="Aradığınız kriterlere göre kayıt bulunamadı"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {NextPageLink} {LastPageLink}"
                          currentPageReportTemplate="Gösterilen kayıtlar {startRecord} - {endRecord} / {totalRecords}">
-                <p:column style="font-size: smaller;" headerText="Id">
+                <f:facet name="header">
+                    <h:outputText value="Yazar Sonuçları"/>
+                </f:facet>
+                <p:column style="width: 30%" headerText="Id">
                     <h:outputText value="#{_yazar.id}"/>
                 </p:column>
-                <p:column style="font-size: smaller;" headerText="Ad Soyad">
+                <p:column style="width: 40%" headerText="Ad Soyad">
                     <h:outputText value="#{_yazar.tamAdi}"/>
                 </p:column>
-                <p:column style="font-size: smaller;" headerText="Toplam Skor">
+                <p:column style="width: 20%" headerText="Toplam Skor">
                     <h:outputText value="#{_yazar.toplamSkoru}"/>
                 </p:column>
+                <p:column style="width: 10%" headerText="Makale Sayısı">
+                    <h:outputText value="#{_yazar.bulunanMakaleSayisi}"/>
+                </p:column>
             </p:dataTable>
-    </p:outputPanel>
+        </p:outputPanel>
     </h:form>
 </h:body>
 </html>
